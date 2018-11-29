@@ -4,7 +4,7 @@ VERSION  := $(DATE)
 GOOS     ?= $(shell go env | grep GOOS | cut -d'"' -f2)
 BINARIES := nvidia-exporter
 
-LDFLAGS := -X github.com/bugroger/nvidia-exporter/main.VERSION=$(VERSION)
+LDFLAGS := -X github.com/onedr0p/nvidia-exporter/main.VERSION=$(VERSION)
 GOFLAGS := -ldflags "$(LDFLAGS)"
 
 SRCDIRS  := .
