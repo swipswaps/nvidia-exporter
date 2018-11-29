@@ -1,0 +1,32 @@
+package: github.com/onedr0p/nvidia-exporter
+import:
+- package: github.com/beorn7/perks
+  subpackages:
+  - quantile
+- package: github.com/golang/protobuf
+  version: ^1.2.0
+  subpackages:
+  - proto
+- package: github.com/matttproud/golang_protobuf_extensions
+  version: ^1.0.1
+  subpackages:
+  - pbutil
+- package: github.com/mindprince/gonvml
+- package: github.com/prometheus/client_golang
+  version: ^0.9.1
+  subpackages:
+  - prometheus
+  - prometheus/promhttp
+- package: github.com/prometheus/client_model
+  subpackages:
+  - go
+- package: github.com/prometheus/common
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - model
+- package: github.com/prometheus/procfs
+  subpackages:
+  - internal/util
+  - nfs
+  - xfs
